@@ -1,16 +1,16 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-import { CallToAction } from '@/components/CallToAction'
-import { Faqs } from '@/components/Faqs'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { Hero } from '@/components/Hero'
-import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
+import { CallToAction } from '@/components/CallToAction';
+import { Faqs } from '@/components/Faqs';
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
+import { Hero } from '@/components/Hero';
+import { Pricing } from '@/components/Pricing';
+import { PrimaryFeatures } from '@/components/PrimaryFeatures';
+import { SecondaryFeatures } from '@/components/SecondaryFeatures';
+import { Testimonials } from '@/components/Testimonials';
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -32,18 +32,6 @@ export default function Home() {
       </main>
       <Footer />
     </>
-  )
-}
-
-
-import YourComponents from '../components/YourComponents';
-
-export default function Home({ data }) {
-  return (
-    <div>
-      <h1>Strona główna</h1>
-      {/* Inne komponenty */}
-    </div>
   );
 }
 
@@ -56,4 +44,3 @@ export async function getStaticProps() {
     },
   };
 }
-
