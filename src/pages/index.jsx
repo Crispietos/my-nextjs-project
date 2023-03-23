@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>TaxPal - Accounting made simple for small businesses</title>
+        <title>CRM DLA NIEKAZDEGO</title>
         <meta
           name="description"
           content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
@@ -34,3 +34,26 @@ export default function Home() {
     </>
   )
 }
+
+
+import YourComponents from '../components/YourComponents';
+
+export default function Home({ data }) {
+  return (
+    <div>
+      <h1>Strona główna</h1>
+      {/* Inne komponenty */}
+    </div>
+  );
+}
+
+export async function getStaticProps() {
+  // Pobierz dane lub wykonaj operacje, które są potrzebne
+
+  return {
+    props: {
+      data: 'yourData', // Przekaż dane jako właściwości do komponentu Home
+    },
+  };
+}
+
